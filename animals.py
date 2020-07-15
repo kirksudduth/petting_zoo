@@ -2,54 +2,64 @@ from datetime import date
 
 # WALKING CLASSES
 class Llama:
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
 
-leif = Llama("Leif", "curly-haired llama")
-print(leif)
+leif = Llama("Leif", "curly-haired llama", "afternoon")
+print(f'{leif.name} the {leif.species} is available for petting during the {leif.shift} shift.')
 
 class Donkey:
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
 
-desmond = Donkey("Desmond", "agreeable donkey")
-print(desmond)
+desmond = Donkey("Desmond", "agreeable donkey", "morning")
+print(f'{desmond.name} the {desmond.species} is available for petting during the {desmond.shift} shift.')
+
 
 class Sheep:
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
 
-shepherd = Sheep("Shepherd", "responsible sheep")
-print(shepherd)
+shepherd = Sheep("Shepherd", "responsible sheep", "midday")
+print(f'{shepherd.name} the {shepherd.species} is available for petting during the {shepherd.shift} shift.')
+
 
 class Ibex:
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
 
-ingrid = Ibex("Ingrid", "scared-of-heights ibex")
-print(ingrid)
+ingrid = Ibex("Ingrid", "scared-of-heights ibex", "afternoon")
+print(f'{ingrid.name} the {ingrid.species} is available for petting during the {ingrid.shift} shift.')
+
 
 class Goat:
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
+    # def __str__(self):
+    #     return f''
 
-geoffrey = Goat("Geoffrey", "billy goat")
-print(geoffrey)
+geoffrey = Goat("Geoffrey", "billy goat", "morning")
+print(f'{geoffrey.name} the {geoffrey.species} is available for petting during the {geoffrey.shift} shift.')
 #END WALKING CLASSES
 
 #START SLITHERING CLASSES
