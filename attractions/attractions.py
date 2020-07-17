@@ -28,6 +28,3 @@ class Wetlands:
         self.animals.append(animal)
         
 
-creature_culdesac = Petting_zoo("Creature Culdesac")
-no_feet_knoll = Snake_pit("No Feet Knoll")
-swimmy_jazz = Wetlands("Swimmy Jazz")
