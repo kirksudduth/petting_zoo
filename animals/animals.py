@@ -2,13 +2,28 @@ from datetime import date
 
 # WALKING CLASSES
 class Llama:
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, shift, food, chip_num):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
         self.food = food
+        self.__chip_number = chip_num
+
+    @property
+    def chip_number(self):
+        try:
+            return self.__chip_number
+        except AttributeError:
+            return 0
+    
+    @chip_number.setter
+    def chip_number(self, new_chip_number):
+        if type(new_chip_number) is int:
+            self.__chip_number = new_chip_number
+        else:
+            raise TypeError("Please provide a whole integer.")
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
