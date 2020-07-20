@@ -29,249 +29,108 @@ class Animal:
         return f'{self.name} is a {self.species}.'
 
 # WALKING CLASSES
-class Llama:
+class Llama(Animal):
     def __init__(self, name, species, shift, food, chip_num):
-        super().__init__():
+        super().__init__(name, species, food, chip_num)
         self.walking = True
         self.shift = shift
 
-    @property
-    def chip_number(self):
-        try:
-            return self.__chip_number
-        except AttributeError:
-            return 0
-    
-    @chip_number.setter
-    def chip_number(self, new_chip_number):
-        if type(new_chip_number) is int:
-            self.__chip_number = new_chip_number
-        else:
-            raise TypeError("Please provide a whole integer.")
 
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
-
-
-class Donkey:
-    def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Donkey(Animal):
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.walking = True
         self.shift = shift
-        self.food = food
 
     def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
+        print(f'{self.name} the {self.species} was fed {self.food} while watching Matlock.')
 
 
-class Sheep:
-    def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Sheep(Animal):
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.walking = True
         self.shift = shift
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
 
 
-class Ibex:
-    def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Ibex(Animal):
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.walking = True
         self.shift = shift
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
 
 
-class Goat:
-    def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Goat(Animal):
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.walking = True
         self.shift = shift
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
 
 #END WALKING CLASSES
 
 #START SLITHERING CLASSES
-class Coral_snake:
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Coral_snake(Animal):
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
-        self.food = food
+
+
+class Boa_constrictor(Animal):
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.slithering = True
+
+
+class Rattlesnake(Animal):
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.slithering = True
 
     def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
+        print(f'{self.name} the {self.species} was fed {self.food} while getting his scales lightly scraped.')
 
 
-class Boa_constrictor:
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class King_cobra(Animal):
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
 
 
-class Rattlesnake:
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Cyclops_snake(Animal):
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
-
-
-class King_cobra:
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.slithering = True
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
-
-
-class Cyclops_snake:
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.slithering = True
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
 
 #END SLITHERING CLASSES
 
 #START SWIMMING CLASSES
-class Mallard:
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Mallard(Animal):
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.swimming = True
-        self.food = food
+
+class Beaver(Animal):
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.swimming = True
+
+class Catfish(Animal):
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.swimming = True
+
+class Platypus(Animal):
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.swimming = True
 
     def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+        print(f'{self.name} the {self.species} was fed {self.food} while listening to lectures on self-improvement.')
 
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
-
-
-class Beaver:
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Nemo(Animal):
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.swimming = True
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
-
-
-class Catfish:
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.swimming = True
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
-
-
-class Platypus:
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.swimming = True
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
-
-
-class Nemo:
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.swimming = True
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-    def __str__(self):
-        return f'{self.name} is a {self.species}.'
 
 
 #END SWIMMING CLASSES
