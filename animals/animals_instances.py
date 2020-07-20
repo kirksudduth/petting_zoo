@@ -14,7 +14,7 @@ from .animals import Beaver
 from .animals import Mallard
 from .animals import Platypus
 
-leif = Llama("Leif", "curly-haired llama", "afternoon", "oats and greens")
+leif = Llama("Leif", "curly-haired llama", "afternoon", "oats and greens", 401)
 desmond = Donkey("Desmond", "agreeable donkey", "morning", "eggs benedict")
 shepherd = Sheep("Shepherd", "responsible sheep", "midday", "an ancient grain bowl")
 ingrid = Ibex("Ingrid", "scared-of-heights ibex", "afternoon", "corn dogs and funnel cakes")
