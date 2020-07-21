@@ -1,18 +1,18 @@
-from .animal import Llama
-from .animal import Donkey
-from .animal import Goat
-from .animal import Ibex
-from .animal import Sheep
-from .animal import Coral_snake
-from .animal import Boa_constrictor
-from .animal import Rattlesnake
-from .animal import Cyclops_snake
-from .animal import King_cobra
-from .animal import Nemo
-from .animal import Catfish
-from .animal import Beaver
-from .animal import Mallard
-from .animal import Platypus
+from animals import Llama
+from animals import Donkey
+from animals import Goat
+from animals import Ibex
+from animals import Sheep
+from animals import Coral_snake
+from animals import Boa_constrictor
+from animals import Rattlesnake
+from animals import Cyclops_snake
+from animals import King_cobra
+from animals import Nemo
+from animals import Catfish
+from animals import Beaver
+from animals import Mallard
+from animals import Platypus
 
 leif = Llama("Leif", "curly-haired llama", "afternoon", "oats and greens", 401)
 desmond = Donkey("Desmond", "agreeable donkey",
