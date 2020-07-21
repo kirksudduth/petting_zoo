@@ -32,7 +32,7 @@ for animal in creature_culdesac.animals:
     print(f'    * {animal.name} the {animal.species}')
 
 no_feet_knoll = Snake_pit(
-    "No Feet Knoll", "slithering -- it's the new walking")
+    "No Feet Knoll", "slithering is the new walking")
 no_feet_knoll.add_animal(bill)
 no_feet_knoll.add_animal(ridley)
 no_feet_knoll.add_animal(keira)
