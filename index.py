@@ -33,7 +33,6 @@ from animals import Nemo
 from animals import Platypus
 
 bosworth = Beaver("Bosworth", "belching beaver", "barley and rye", 210)
-
 creature_culdesac = Petting_zoo(
     "Creature Culdesac", "all those creatures that want(?) to be petted to no end")
 creature_culdesac.add_animal(leif)
