@@ -1,24 +1,38 @@
-from animals.animals_instances import leif
-from animals.animals_instances import desmond
-from animals.animals_instances import shepherd
-from animals.animals_instances import geoffrey
-from animals.animals_instances import ingrid
-from animals.animals_instances import carol
-from animals.animals_instances import bill
-from animals.animals_instances import ridley
-from animals.animals_instances import keira
-from animals.animals_instances import seth
-from animals.animals_instances import maureen
-from animals.animals_instances import bentley
-from animals.animals_instances import cheryl
-from animals.animals_instances import prose
-from animals.animals_instances import noelle
+from animals import leif
+from animals import desmond
+from animals import shepherd
+from animals import geoffrey
+from animals import ingrid
+from animals import carol
+from animals import bill
+from animals import ridley
+from animals import keira
+from animals import seth
+from animals import maureen
+from animals import bentley
+from animals import cheryl
+from animals import prose
+from animals import noelle
 from attractions import Petting_zoo
 from attractions import Snake_pit
 from attractions import Wetlands
 from animals import Beaver
+from animals import Llama
+from animals import Donkey
+from animals import Goat
+from animals import Sheep
+from animals import Ibex
+from animals import Coral_snake
+from animals import Cyclops_snake
+from animals import Rattlesnake
+from animals import Boa_constrictor
+from animals import King_cobra
+from animals import Mallard
+from animals import Catfish
+from animals import Nemo
+from animals import Platypus
 
-benny = Beaver("Benny", "beaver", "barley and rye", 210)
+bosworth = Beaver("Bosworth", "belching beaver", "barley and rye", 210)
 
 creature_culdesac = Petting_zoo(
     "Creature Culdesac", "all those creatures that want(?) to be petted to no end")
@@ -50,6 +64,7 @@ swimmy_jazz.add_animal(bentley)
 swimmy_jazz.add_animal(cheryl)
 swimmy_jazz.add_animal(prose)
 swimmy_jazz.add_animal(noelle)
+swimmy_jazz.add_animal(bosworth)
 print(f'{swimmy_jazz.attraction_name} is where you {swimmy_jazz.description}.')
 for animal in swimmy_jazz.animals:
     print(f'    * {animal.name} the {animal.species}')
